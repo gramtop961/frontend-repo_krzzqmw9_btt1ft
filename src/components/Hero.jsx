@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative w-full min-h-screen overflow-hidden bg-slate-900">
+    <section id="hero" className="relative w-full min-h-screen overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
       {/* 3D cover */}
       <div className="absolute inset-0">
         <Spline
@@ -13,13 +13,13 @@ export default function Hero() {
       </div>
 
       {/* Soft gradient overlay to improve text contrast (does not block interaction) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/30 to-slate-900/80" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/30 to-slate-950/90" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-24 text-center sm:py-32">
         <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur">
           <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-          Live preview • AI automation hub
+          Live • AI Automation Hub
         </span>
         <h1 className="font-heading text-4xl font-semibold leading-tight tracking-tight text-white sm:text-6xl">
           Orchestrate your AI automations in one place
